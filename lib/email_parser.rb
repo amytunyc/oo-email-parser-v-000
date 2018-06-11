@@ -11,7 +11,7 @@ class EmailParser
   end
   
   def parse
-    email_array = @email.split(",").uniq.flatten
-    email_array
+    email_array = @email.split(",").uniq
+    email_array.reject?
   end
 end
